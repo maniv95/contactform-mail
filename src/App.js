@@ -31,7 +31,7 @@ class App extends Component {
     formBody.push("content =" + encodeURIComponent(this.state.message));
     formBody = formBody.join("&")
     console.log("Data from UI:",formBody)
-    fetch('http://192.168.0.102:8082/SendMail',{
+    fetch('http://localhost:8082/SendMail',{
                 method: 'post',
                 headers: {
                   'Accept': 'application/json',
